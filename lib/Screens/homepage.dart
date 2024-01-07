@@ -33,7 +33,10 @@ class HomePage extends StatelessWidget {
               children: [
                 SizedBox(
                   height: MediaQuery.of(context).size.height,
-                  child: Image.asset("assets/home.jpeg"),
+                  child: Image.asset(
+                    "assets/home.jpeg",
+                    height: 100,
+                  ),
                 ),
                 CustomDisplayButton(
                   text: "Generate PDF",
@@ -41,7 +44,9 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Operation(),
+                        builder: (context) => const Operation(
+                          isQuiz: false,
+                        ),
                       ),
                     );
                   },
@@ -55,7 +60,9 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Operation(),
+                        builder: (context) => const Operation(
+                          isQuiz: true,
+                        ),
                       ),
                     );
                   },

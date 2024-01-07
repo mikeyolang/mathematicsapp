@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mathematicsapp/utilities/colors.dart';
+import 'package:mathematicsapp/utilities/constants.dart';
 
 class CustomDisplayButton extends StatelessWidget {
   const CustomDisplayButton(

@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:mathematicsapp/Screens/homepage.dart';
 
-import '../utilities/colors.dart';
+import '../utilities/constants.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
