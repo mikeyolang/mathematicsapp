@@ -43,7 +43,7 @@ class Operation extends StatelessWidget {
                             builder: (context) {
                               return isQuiz
                                   ? const QuestionScreen(
-                                      icon: FontAwesomeIcons.plus)
+                                      icon: FontAwesomeIcons.plus,)
                                   : const PDFGenerationScreen(
                                       icon: FontAwesomeIcons.plus,
                                       operation: "plus",
