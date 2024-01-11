@@ -161,7 +161,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const QuizScreen(),
+                            builder: (context) => QuizScreen(
+                              duration: time,
+                              operator: widget.operator,
+                              numberOfQuestions: _question.text,
+                              rangeOne: _firstRange.text,
+                              rangeTwo: _secondRange.text,
+                            ),
                           ),
                         );
                       }
