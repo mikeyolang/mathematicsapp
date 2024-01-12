@@ -105,7 +105,13 @@ class _QuizScreenState extends State<QuizScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const AnswerScreen(),
+          builder: (context) => AnswerScreen(
+            maximumScore: int.parse(widget.numberOfQuestions),
+            score: score,
+            answers: answers,
+            questions: questions,
+            userAnswers: userAnswer,
+          ),
         ),
       );
     } else {
